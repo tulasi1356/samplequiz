@@ -1,0 +1,17 @@
+/* input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+} */
+/* input{
+    background:url(bg-dot.jpg) repeat-x center bottom;
+    border:none;
+    padding:2px 2px;
+} */
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+    }

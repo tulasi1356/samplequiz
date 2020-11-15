@@ -1,0 +1,92 @@
+<head>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+</head>
+<div [ngSwitch]="questionId">
+  <div *ngSwitchCase="1">
+    <ul class="items">
+   <div class="container">
+     <div class="box">
+       <div class="imgBx">
+       <img src="https://previews.123rf.com/images/lenm/lenm1710/lenm171000011/87819690-illustration-of-a-kid-boy-thinking-while-reading-a-manuscript-or-other-documents.jpg" width="100" height="100">
+       </div>
+       <div class="content">
+        <h2>Multiple Choices</h2><br>
+        <li  *ngFor="let question of questions">
+          
+          <div class="a">
+              <p>&nbsp;&nbsp;{{question.id}}   {{question.que}}<br></p>
+              <form action="/action_page.php">
+                <label >&nbsp;&nbsp; <input type="radio"  #input name="option1"    (click)="check (1,question.ansid ,input.value) "><span class="span" >{{question.option1}}</span></label><br>
+                <label> &nbsp;&nbsp; <input type="radio"  #input name="option1"    (click)="check (2,question.ansid ,input.value) " ><span class="span" >{{question.option2}}</span></label><br>
+                <label> &nbsp;&nbsp; <input type="radio"   #input name="option1"    (click)="check (3,question.ansid , input.value) "><span class="span" >{{question.option3}}</span></label><br>
+                <label> &nbsp;&nbsp; <input type="radio"   #input name="option1"    (click)="check (4,question.ansid , input.value) "><span class="span">{{question.option4}}</span></label><br>
+              </form>
+              
+          </div>
+          </li>
+          <button type="button" class="btn btn-primary" (click)="onsubmit()">Submit</button>
+       </div>
+     </div>
+   </div>
+  </ul>
+  <!-- <button type="button" class="btn btn-primary"  (click)="onsubmit()">Submit</button> -->
+  </div>
+  <div *ngSwitchCase="2">
+    <ul class="items">
+     <div class="container">
+       <div class="box">
+         <div class="imgBx">
+           <img src="https://images.freeimages.com/images/small-previews/2c1/thinking-kid-1428260.jpg" width="100" height="100">
+         </div>
+         <div class="content">
+           <h2>Multiple Chooses</h2>
+          <li  *ngFor="let question of questions1">
+            <div class="a">
+                <p class="a" >&nbsp;&nbsp; {{question.id}}   {{question.que}}<br></p>
+                <form action="/action_page.php">
+                <label> &nbsp;&nbsp; <input type="radio" #input  name="option2" (click)="check(1,question.ansid ,input.value)"><span class="span">{{question.option1}}</span></label><br>
+                <label> &nbsp;&nbsp; <input type="radio"  #input name="option2"(click)="check(2,question.ansid  ,input.value) " ><span class="span" >{{question.option2}}</span></label><br>
+                <label> &nbsp;&nbsp; <input type="radio"   #input name="option2" (click)="check(3,question.ansid  ,input.value) "><span class="span">{{question.option3}}</span></label><br>
+                <label> &nbsp;&nbsp; <input type="radio"  #input name="option2" (click)="check(4,question.ansid  ,input.value) "><span class="span">{{question.option4}}</span></label><br>
+              </form>  
+            </div>
+            </li>
+            <button type="button" class="btn btn-primary"  (click)="onsubmit()">Submit</button>
+         </div>
+       </div>
+     </div>
+  </ul>
+  
+  </div>
+  <div *ngSwitchCase="3">
+    <ul class="items">
+     <div class="container">
+       <div class="box">
+         <div class="imgBx">
+        <img src="https://www.jing.fm/clipimg/detail/35-351312_transparent-image-clipart-boy-thinking-clipart-gif.png" width="100" height="100">
+         </div>
+         <div class="content">
+          <h2>Multiple Chooses</h2>
+          <li  *ngFor="let question of questions2">
+            <div class="a">
+                <p class="a" >&nbsp;&nbsp;{{question.id}}   {{question.que}}<br></p>
+                <form action="/action_page.php"> 
+                  <label> &nbsp;&nbsp; <input type="radio"  #input  name="option3" (click)="check (1,question.ansid ,input.value) "><span class="span">{{question.option1}}</span></label><br>
+                  <label> &nbsp;&nbsp; <input type="radio"  #input name="option3"(click)="check (2,question.ansid , input.value) " ><span class="span">{{question.option2}}</span></label><br>
+                  <label> &nbsp;&nbsp; <input type="radio"  #input name="option3"  (click)="check (3,question.ansid , input.value) "><span class="span">{{question.option3}}</span></label><br>
+                  <label> &nbsp;&nbsp; <input type="radio"  #input name="option3" (click)="check (4,question.ansid , input.value) "><span class="span">{{question.option4}}</span></label><br>
+                
+                </form>
+                
+            </div>
+            </li>
+            <button type="button" class="btn btn-primary" (click)="onsubmit()">Submit</button>
+         </div>
+       </div>
+     </div>
+  </ul>
+
+  </div>
+</div>

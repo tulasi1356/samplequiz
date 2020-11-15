@@ -1,0 +1,71 @@
+<!-- <div class='a'>
+       <div class="container">
+        <h2>REGISTRATION</h2>
+        <form class="form-horizontal" action="/action_page.php">
+            <i class="material-icons prefix">account_circle</i>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input #myInput type="email" class="form-control" id="email" placeholder="Enter email" name="email"  width="100" required>
+            </div >
+            
+          </div>
+          <div class="form">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">          
+              <input #myInput1 type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    < <button (click)="onselect()" >submit</button> -->
+    <!-- <p (click)="onselect(myInput.value,myInput1.value )" *ngFor= "let opt of submit" ><button>submit</button></p>
+</div> --> 
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="b">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset=md-1">
+        <div class="row">
+          <div class="col-md-5 register-left">
+            <img src="https://hulalime.com/wp-content/uploads/2018/02/download-1.png">
+             <h3>Join Us</h3>
+             <p>Subscribe For More Quizes</p>
+             <button type="button" (click)="more()" class="btn btn-primary">More..</button>
+             
+          </div>
+          <div class="col-md-7 register-right">
+                 <h2>Register Here</h2>
+                 <div class="register-form">
+                <form #userForm="ngForm">
+                
+                  <div class="form-group">
+                    <i class="material-icons prefix">account_circle</i>
+                         Email: <input type="text"  #email="ngModel"  class="form-control" [class.is-invalid]="email.invalid && email.touched" placeholder="Enter E-Mail" required name="email" [(ngModel)]="reg.email">
+
+                         <small   class="text-danger" [class.d-none]="email.valid || email.untouched">Email Is Required</small>
+                         <!-- <h2>"email"{{email.valid}}</h2> -->
+                         <!-- <input type="text"   placeholder="Enter Name" class="form-control"  name="Username" [(ngModel)]="tutor1.name"> -->
+                   </div>
+                   <div class="form-group">
+                    <i class="material-icons">lock</i>
+                    Password: <input type="password"  required #password="ngModel" class="form-control" [class.is-invalid]="password.invalid && password.touched" placeholder="Enter Password" name="password" [(ngModel)]="reg.password">
+                    <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required</small>
+                   </div>
+                </form>
+                <button type="button" [disabled]="userForm.form.invalid" (click)="onselect()" class="btn btn-primary">submit</button>
+                 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

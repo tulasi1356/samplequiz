@@ -1,0 +1,129 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap mycol.4.0/css/bootstrap.min.css">
+<style>
+
+
+.back-ground{
+ background-image:url("https://images.ctfassets.net/usf1vwtuqyxm/dpmDSBWkWGFebViZKJuG7/c488da0a5c57abcaf6dcad mycol49d1 mycol47/Feature-Hub-Copy-compressor.png");
+ width:1000%;
+ height:1000%;
+}
+.oval {
+  height: 70px;
+  width: 160px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  top:10%;
+  left: 45%;
+}
+.a{
+    position: absolute;
+    top:10%;
+     left: 25%;
+
+}
+.b
+{
+    position: absolute;
+     top:10%;
+     left:12%;
+}
+.rectangle {
+  height: 60px;
+  width: 150px;
+  background-color:gray;
+  position:absolute;
+  right:60%;
+  top:150%;
+}
+.rectangle1
+{
+   height: 60px;
+  width: 150px;
+  background-color:gray;
+  position:absolute;
+  left:60%;
+  top:150%;
+}
+.c
+{
+position:absolute;
+  left:55%;
+  top:15%;
+}
+</style>
+<div class="back-ground">
+    <div class="oval">
+         <div class='a'>
+             choose your choice
+          </div>
+      
+    <div class="rectangle">
+          <div class='b'>
+                <p (click)="onselect(opt)" *ngFor= "let opt of computer"><button type="button" class="btn btn-success">computer</button></p>
+           </div>
+     </div>
+    <div class="rectangle1">
+          <div class='c'>
+                <p (click)="sel(op)" *ngFor= "let op of os"><button type="button" class="btn btn-success">os</button></p>
+           </div>
+
+     </div>
+</div>
+ </div>    -->
+ 
+ <div class="container-fluid">
+<div class="row">
+  <div class= "col col-md-3 col-sm-6 mycol ">
+    <a>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <h6 (click)="onselect(opt)" *ngFor= "let opt of computer">Computer</h6>
+    </a>
+     
+  </div>
+  <div class= "col col-md-3 col-sm-6 mycol ">
+    <a>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+     <h6 (click)="sel(op)" *ngFor= "let op of os">Operating System</h6>
+    </a>
+ </div>
+ <div class= "col col-md-3 col-sm-6 mycol ">
+  <a>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+     <h6 (click)="sele()" >Movies</h6>
+     </a>
+ </div>
+ <div class= "col col-md-3 col-sm-6 mycol ">
+  <a>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <h6 (click)="selec()" >Brands</h6>
+    </a>
+ </div>
+</div></div>
+<div class="container-fluid ">
+  <div class="row justify-content-center">
+    <div class="col mycol"></div>
+    <div class="col mycol">
+      <img src="../../assets/img1.jpg">
+   </div>
+    <div class="col mycol"></div>
+  </div>
+ </div>

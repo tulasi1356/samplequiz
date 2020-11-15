@@ -1,0 +1,16 @@
+<div class="a">
+    <div class="container">
+        <div class="box">
+            <div class=" imgBx">
+                <img src="https://image.freepik.com/free-vector/girl-holding-book-isolated-cartoon-character-elementary-school-student-with-backpack_71593-230.jpg" width="300" height="400">
+            </div>
+        
+            <div class=" content">
+                <h2>Quiz Time</h2><br><br><br>
+                    <p (click)="Onselect(question)" *ngFor="let question of questions">
+                        <button type="button" class="btn btn-primary">&nbsp;&nbsp;{{question.id}}.&nbsp;{{question.que}}<br><br></button>
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="a">
+    <div class="container">
+      <div *ngIf="x; else elseBlock">
+        <div class="box">
+        </div>
+       <div class="b">
+        <p>Congrats you got {{main}}</p>
+       </div>
+      </div>
+      <ng-template #elseBlock>
+        <div class="box1">
+        </div>
+        <div class="c">
+           <p>Better luck next time</p>
+           </div>
+       </ng-template>
+    </div>
+</div>

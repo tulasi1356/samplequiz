@@ -1,0 +1,33 @@
+<!-- <div class='a'>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mMbVWTRtJ_2X2MS2babDA-foq5m8EXlS17De0peJ5iAgErsj&s" width="1200" height="500">
+<div *ngIf="x; else elseBlock">
+    <div class="b">
+        <img src="https://previews.123rf.com/images/sararoom/sararoom1304/sararoom130400020/18942565-illustration-of-cartoon-trophy.jpg" width="80" height="80" alt="mypic" >
+        <p>Congrats you got{{main}}</p>
+    </div>
+</div>
+<ng-template #elseBlock>
+    <div class="c">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6N6xBcJe1lV5xm1SKr5nHibaFLNNM3dqP6NKyWQR2j47i2rw5Yg&s" width="80" height="80" alt="mypic">
+<p>Better luck next time</p>
+</div>
+</ng-template>
+</div> -->
+<div class="a">
+    <div class="container">
+      <div *ngIf="x; else elseBlock">
+        <div class="box">
+        </div>
+       <div class="b">
+        <p>Congrats you got {{main}}</p>
+       </div>
+      </div>
+      <ng-template #elseBlock>
+        <div class="box1">
+        </div>
+        <div class="c">
+           <p>Better luck next time</p>
+           </div>
+       </ng-template>
+    </div>
+</div>

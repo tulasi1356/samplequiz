@@ -1,0 +1,191 @@
+<style>
+.b{
+    position:relative;
+    left:40%;
+   width:40%;
+}
+.head{
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+}
+.c{
+    position:absolute;
+    left:40%;
+    font-style:italic;  
+}
+.previous{
+    position: absolute;
+    /* left: 45%; */
+    bottom: -30%;
+}
+.next{
+    position: absolute;
+    left: 80%;
+    bottom:-30%;
+}
+.submit{
+    position: absolute;
+    left: 45%;
+    bottom:-30%;
+}
+.back{
+    position: absolute;
+    top: 2%;
+}
+/* .submit1{
+    position: absolute;
+    left: 45%;
+    bottom:-8%;
+}
+.back1{
+    position: absolute;
+    bottom: -25%;
+}
+
+.previous1{
+    position: absolute;
+    /* left: 45%; 
+    bottom: -13%;
+}
+.next1{
+    position: absolute;
+    left: 80%;
+    bottom:-13%;
+} */
+
+</style>
+<div [ngSwitch]="questionId">
+
+     <div *ngSwitchCase="1">
+
+        <div class="a">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="https://www.bing.com/th?id=OIP.aiptBQK463hfUWgv23J1TgHaLA&pid=Api&rs=1" width="200" height="300">
+                </div>
+                <div class="content">
+                    <h2 class="head">Fill In The Blanks</h2><br><br>
+                        <form name="myform">
+                            <div class="c"> Q.No of states in the process?</div><br>
+                            <div class="b"><input type="text" #myinput  data-required="true" ></div>
+                            <div class="c">Q.Which system call returns the process identifier of a terminated child?</div><br><br>
+                             <div class="b"><input type="text" #myinput1></div>
+                            <div class="c">Q. How many schedulor?<br></div><br>
+                             <div class="b"><input type="text" #myinput2></div>
+                            <div class="submit">
+                                <input type="button" class="btn btn-primary mb1 bg-orange" value="submit" (click)="myfun1(myinput.value,myinput1.value,myinput2.value)">
+                            </div>
+                            <div class="previous">
+                                <a (click)="goprevious()"><button  class="btn btn-primary mb1 bg-orange">prev</button></a>&nbsp;&nbsp;
+                            </div>
+                           <div class="next">
+                            <a (click)="gonext()"><button class="btn btn-primary mb1 bg-orange">next</button></a>
+                           </div>
+                             <div >
+                              <div class="back">
+                                <button  class="btn btn-default"   (click)="gotoos()">Home</button>
+                              </div>
+                               </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+                
+    </div>
+     <div *ngSwitchCase="2">
+        <div class="a">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="https://www.bing.com/th?id=OIP.aiptBQK463hfUWgv23J1TgHaLA&pid=Api&rs=1" width="200" height="300">
+                </div>
+                <div class="content">
+                    <h2 class="head">Fill In The Blanks</h2><br><br>
+                        <form name="myform">
+                            <div class="c">Q.os fullform?</div>
+                            <div class="b"><br><input type="text" #myinput  data-required="true" ></div>
+                             <div class="c"> Q.The OS X has</div>
+                           <div class="b"> <br><input type="text" #myinput1><br><br></div>
+                             <div class="c">Q.In Unix, Which system call creates the new process?</div>
+                            <div class="b"><br><input type="text" #myinput2></div>
+                            <div class="submit">
+                                <input type="button" class="btn btn-primary mb1 bg-orange" value="submit" (click)="myfun(myinput.value,myinput1.value,myinput2.value)">
+                            </div>
+                            <div class="previous">
+                                <a (click)="goprevious()"><button  class="btn btn-primary mb1 bg-orange">prev</button></a>
+                            </div>
+                           <div class="next">
+                            <a (click)="gonext()"><button class="btn btn-primary mb1 bg-orange">next</button></a>
+                           </div>
+                             <div >
+                              <div class="back">
+                                <button  class="btn btn-default"   (click)="gotoos()">Home</button>
+                              </div>
+                               </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+                
+    </div>
+     <div *ngSwitchCase="3">
+        <div class="a">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="https://www.bing.com/th?id=OIP.aiptBQK463hfUWgv23J1TgHaLA&pid=Api&rs=1" width="200" height="300">
+                </div>
+                <div class="content">
+                    <h2 class="head">Fill In The Blanks</h2><br><br>
+                        <form name="myform">
+                            <div class="c">Q.Which system call returns the process identifier of a terminated child<br></div>
+                            <div class="b"><br><br><input type="text" #myinput3  data-required="true" ></div>
+                            <div class="c">Q.The OS X has <br></div>
+                            <div class="b"><br><input type="text" #myinput4 ></div>
+                            <div class="c">Q. In Unix, Which system call creates the new process<br></div>
+                            <div class="b"><br><input type="text" #myinput5 ></div>
+                            <div class="submit">
+                                <input type="button" class="btn btn-primary mb1 bg-orange" value="submit" (click)="myfun2(myinput3.value,myinput4.value,myinput5.value)">
+                            </div>
+                            <div class="previous">
+                                <a (click)="goprevious()"><button  class="btn btn-primary mb1 bg-orange">prev</button></a>&nbsp;&nbsp;
+                            </div>
+                           <div class="next">
+                            <a (click)="gonext()"><button class="btn btn-primary mb1 bg-orange">next</button></a>
+                           </div>
+                             <div >
+                              <div class="back">
+                                <button  class="btn btn-default"   (click)="gotoos()">Home</button>
+                              </div>
+                               </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+                
+
+
+
+
+
+
+
+
+
+
+        
+    
+        <!-- <div class="a">
+        <img src="https://thespinoff.co.nz/wp-content/uploads/2016/08/HiRes-1-e1472112882517-850x510.jpg" width=1250 height="600">
+         <form name="myform">
+                <div class="c">Q.Consider a machine with 64 MB physical memory and a 32-bit virtual address space. If the page size is 4KB, what is the approximate size of the page table?<br></div>
+                <div class="b"><br><input type="text" #myinput3  data-required="true" ><br><br></div>
+                <div class="c">Q.The OS X has <br></div>
+                <div class="b"><br><input type="text" #myinput4 ><br><br></div>
+                <div class="c">Q. In Unix, Which system call creates the new process<br></div>
+                <div class="b"><br><input type="text" #myinput5 ><br><br></div>
+                <br><br>&nbsp;<input type="button"class="btn btn-primary mb1 bg-orange"  value="submit" (click)="myfun2(myinput3.value,myinput4.value,myinput5.value)"><br><br>
+            </form>
+        </div>
+
+     </div> -->
+</div>

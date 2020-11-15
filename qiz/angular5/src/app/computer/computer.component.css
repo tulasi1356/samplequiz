@@ -1,0 +1,60 @@
+.span{
+    color: black;
+    font-size: 30px;
+}
+.a{
+    color: black;
+}
+.container{
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+/* .a
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} */
+.box
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:#fff;
+    border-radius: 4px;
+    box-shadow:0 5px 15px rgba(0,0,0,.5) ;
+    display: flex;
+
+}
+.box:hover
+{
+    box-shadow: 0 15px 30px rgba(0,0,0,.5);
+}
+.box .imgBx
+{
+    width: 150px;
+    flex: 0.0.150px;
+}
+.box .content {
+padding-left: 20px;
+}
+.box .content h2{
+ margin: 0;
+ padding-left: 0;
+ color:black;
+ font-size: 30px;
+}
+.box .content p{
+    /* position: absolute;
+    left: 20%; */
+  
+}

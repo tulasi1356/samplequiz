@@ -1,0 +1,128 @@
+/* .b{
+    position: absolute;
+    top: 40% ;
+    left:40%;
+}
+ .c{
+    position: absolute;
+    top:38%;
+    left:43%;
+}
+.  */
+.a{
+ background: #000;
+}
+.container{
+    width: 400px;
+    height:400px ;
+    /* background: #000; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.box
+{
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.box:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('http://static6.depositphotos.com/1150740/674/v/950/depositphotos_6740872-Cartoon-young-winner-with-golden-trophy-cup.jpg');
+ background-size:cover ;
+ border-radius: 50%;
+ /* top: 50%;
+ left: 50%; */
+ transition: all 0.4s;
+}
+.box:hover:before{
+border: 10px solid #005a60;
+transform: scale(1,1);
+filter: blur(0.2px);
+transform: scale(1.1) rotateZ(70deg);
+/* background: none; */
+}
+.box:after{
+    content: '';
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    background:url('http://static6.depositphotos.com/1150740/674/v/950/depositphotos_6740872-Cartoon-young-winner-with-golden-trophy-cup.jpg');
+    background-size:cover ;
+    border-radius: 50%;
+top: 11px;
+left: 11px;
+transition: all  0.4s;
+transform: scale(0);
+}
+.box:hover::after{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+.b{
+    color: gray;
+    font-style: bold;
+    font-size: 25px;
+    position: absolute;
+    left: 15%;
+}
+.box1
+{
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.box1:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('https://www.bing.com/th?id=OIP.RvJJE2-GFwX_O4R9F0VqtwHaHk&pid=Api&rs=1');
+ background-size:cover ;
+ border-radius: 50%;
+ /* top: 50%;
+ left: 50%; */
+ transition: all 0.4s;
+}
+.box1:hover:before{
+border: 10px solid #005a60;
+transform: scale(1,1);
+filter: blur(0.2px);
+transform: scale(1.1) rotateZ(70deg);
+/* background: none; */
+}
+.box1:after{
+    content: '';
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    background:url('https://www.bing.com/th?id=OIP.RvJJE2-GFwX_O4R9F0VqtwHaHk&pid=Api&rs=1');
+    background-size:cover ;
+    border-radius: 50%;
+top: 11px;
+left: 11px;
+transition: all  0.4s;
+transform: scale(0);
+}
+.box1:hover::after{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+.c{
+    color: gray;
+    font-style: bold;
+    font-size: 25px;
+    position: absolute;
+    left: 15%;
+}
